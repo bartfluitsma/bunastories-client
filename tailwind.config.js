@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
-// const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
-  content: [
-    './src/**/*.{html,js,jsx}',
-  ], theme: {
+  content: ["**/*.{html, js}", "**/**/*.{html, js}", "./index.html"],
+  theme: {
     screens: {
       sm: '480px',
       md: '768px',
@@ -20,18 +17,6 @@ module.exports = {
       'darkColor': '#343434',
       'lightGreyColor': '#737373'
     },
-    // fontSize: {
-    //   'xs': '12px',
-    //   'sm': '14px',
-    //   'base': 'clamp(1rem, 4.8vw, 1rem)',
-    //   'lg': 'clamp(16px, 4.8vw, 22px)',
-    //   'xl': '1.25rem', // h6
-    //   '2xl': '1.5rem', // h5
-    //   '3xl': 'clamp(1.35rem, 3.5vw, 1.6rem)', // h4
-    //   '4xl': 'clamp(1.9rem, 4vw, 2.5rem)', // h3
-    //   '5xl': 'clamp(2.2rem, 4.5vw, 3rem)', // h2
-    //   '6xl': 'clamp(2rem, 4vw + 1rem, 3rem);', // h1
-    // },
     fluidType: {
       // your fluid type settings
       // works only with unitless numbers
