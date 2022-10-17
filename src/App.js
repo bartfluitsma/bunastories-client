@@ -1,24 +1,20 @@
-import './input.css';
-import {ReactComponent as Logo} from './logo.svg'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
+import HomePage from './pages/Homepage';
+import ListingPage from './pages/Listing';
+// import {ReactComponent as Logo} from './logo.svg'
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      <Logo />
-        <h1 >
-          Find a specialty coffee nearby
-        </h1>
-        <h2>Find a specialty coffee nearby</h2>
-        <h3>Find a specialty coffee nearby</h3>
-        <h4>Find a specialty coffee nearby</h4>
-        <h5>Find a specialty coffee nearby</h5>
-        <h6>Find a specialty coffee nearby</h6>
-        <p>In need for a real coffee? Awesome, we got you covered with the best specialty coffee places you can imagine! specialty coffee places you can imagine.
-
-          In need for a real coffee? Awesome, we got you covered with the best specialty coffee places you can imagine!  </p>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<HomePage/>} />
+          <Route path='/listing' element={<ListingPage/>} />
+        </Routes>
+      </Layout>
+    </>
   );
 }
 

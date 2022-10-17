@@ -1,22 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["**/*.{html, js}", "**/**/*.{html, js}", "./index.html"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
-    colors: {
-      'primaryColor': '#B5532C',
-      'secondaryColor': '#D3AB49',
-      // 'accentColor': '#B5532C',
-      'lightColor': '#EEE9E6',
-      'darkColor': '#343434',
-      'lightGreyColor': '#737373'
-    },
     fluidType: {
       // your fluid type settings
       // works only with unitless numbers
@@ -57,7 +43,29 @@ module.exports = {
       fontFamily: {
         primary: ["Josefin Sans", "sans-serif"],
         secondary: ["Lato", "sans-serif"],
-      }
+      },
+      boxShadow: {
+        'softShadow': '0px 5px 20px 1px rgba(0, 0, 0, 0.1)',
+      },
+      padding: {
+        mobileSidePadding: '4vw',
+        tabletSidePadding: '8vw',
+        desktopSidePadding: '10vw',
+      },
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
+      },
+      colors: {
+        'primaryColor': '#B5532C',
+        'secondaryColor': '#D3AB49',
+        // 'accentColor': '#B5532C',
+        'lightColor': '#EEE9E6',
+        'darkColor': '#343434',
+        'lightGreyColor': '#737373'
+      },
     },
   },
   corePlugins: {
