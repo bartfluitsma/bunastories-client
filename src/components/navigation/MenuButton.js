@@ -54,7 +54,7 @@ const MenuButton = () => {
           <div className="absolute right-0 min-w-[200px] rounded-xl bg-[white] py-4 px-5 shadow-softShadow">
             {navItems.map((navItem, idx) => (
               <NavLink key={idx} to={navItem.menuLink} onClick={changeStyle}>
-                <span className="my-2 block text-base">
+                <span className="my-2 block text-base hover:underline">
                   {navItem.menuTitle}
                 </span>
               </NavLink>
