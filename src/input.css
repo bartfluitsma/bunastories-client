@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-
   * {
-    font-family: theme('fontFamily.secondary');
+    font-family: theme("fontFamily.secondary");
   }
 
   h1 {
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 700;
     @apply text-6xl;
@@ -39,9 +38,33 @@
 
   p {
     font-style: normal;
-    font-family: theme('fontFamily.secondary');
+    font-family: theme("fontFamily.secondary");
     font-weight: 300;
     @apply text-base;
   }
+}
 
+@layer utilities {
+  .sidePadding {
+    padding: 0 theme("padding.mobileSidePadding");
+  }
+  @media (min-width: 768px) {
+    .sidePadding {
+      padding: 0 theme("padding.tabletSidePadding");
+    }
+  }
+  @media (min-width: 976px) {
+    .sidePadding {
+      padding: 0 theme("padding.desktopSidePadding");
+    }
+  }
+}
+
+/* buttons */
+.primaryBtn {
+  @apply w-fit rounded-[50px] bg-primaryColor px-[30px] py-[10px] hover:brightness-110;
+}
+
+.secondaryBtn {
+  @apply w-fit rounded-[50px] border-[1px] border-darkColor bg-transparent px-[30px] py-[10px] text-darkColor  hover:bg-darkColor hover:text-white;
 }

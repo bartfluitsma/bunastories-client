@@ -8,7 +8,7 @@ const Navbar = () => {
     
     return (
         <>
-        <div className='flex items-center justify-between my-4 relative'>
+        <div className='flex items-center justify-between my-4 absolute w-full sidePadding'>
             <div className='relative h-[48px] w-[48px]'>
                 <Link to="/">
                     <Logo className='absolute left-0 right-0 w-full h-full z-10' />
