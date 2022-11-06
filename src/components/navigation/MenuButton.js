@@ -29,22 +29,22 @@ const MenuButton = () => {
               <div
                 className={
                   style
-                    ? "h-[2px] w-[27px] bg-darkColor transition-transform duration-100 ease-in"
-                    : "h-[2px] w-[27px] origin-center translate-y-[6px] rotate-45 bg-darkColor transition-transform duration-100 ease-in"
+                    ? "h-[2px] w-[27px] rounded-xl bg-darkColor transition-transform duration-100 ease-in"
+                    : "h-[2px] w-[27px] origin-center translate-y-[6px] rotate-45 rounded-xl bg-darkColor transition-transform duration-100 ease-in"
                 }
               ></div>
               <div
                 className={
                   style
-                    ? "my-[4px] h-[2px] w-[27px] bg-darkColor transition-colors duration-100 ease-out"
-                    : "my-[4px] h-[2px] w-[27px] transition-colors duration-100 ease-out "
+                    ? "my-[4px] h-[2px] w-[27px] rounded-xl bg-darkColor transition-colors duration-100 ease-out"
+                    : "my-[4px] h-[2px] w-[27px] rounded-xl transition-colors duration-100 ease-out "
                 }
               ></div>
               <div
                 className={
                   style
-                    ? "h-[2px] w-[27px] bg-darkColor transition-transform duration-100 ease-in"
-                    : "h-[2px] w-[27px] origin-center -translate-y-[6px] -rotate-45 bg-darkColor transition-transform duration-100 ease-in"
+                    ? "h-[2px] w-[27px] rounded-xl bg-darkColor transition-transform duration-100 ease-in"
+                    : "h-[2px] w-[27px] origin-center -translate-y-[6px] -rotate-45 rounded-xl bg-darkColor transition-transform duration-100 ease-in"
                 }
               ></div>
             </div>

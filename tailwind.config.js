@@ -25,12 +25,12 @@ module.exports = {
         sm: [-1, 1.6],
         base: [0, 1.6],
         lg: [1, 1.6],
-        xl: [2, 1.2],
-        "2xl": [3, 1.2],
-        "3xl": [4, 1.2],
-        "4xl": [5, 1.1],
-        "5xl": [6, 1.1],
-        "6xl": [7, 1.1],
+        xl: [2, 1.2], // h6
+        "2xl": [0.8, 1.2], // h5
+        "3xl": [1, 1.2], // h4
+        "4xl": [3, 1.1], // h3
+        "5xl": [5, 1.1], // h2
+        "6xl": [7, 1.1], // h1
         "7xl": [8, 1],
         "8xl": [9, 1],
         "9xl": [10, 1],
@@ -71,7 +71,7 @@ module.exports = {
           "url('/src/assets/images/barista-creating-figure-in-coffee-with-milk.png')",
         "hero-pattern-mobile":
           "url('/src/assets/images/barista-creating-figure-in-coffee-with-milk-mobile.png')",
-        // 'footer-texture': "url('/img/footer-texture.png')",
+        "red-spot": "url('/src/images/icons/bunastories-red-spot.svg')",
       },
     },
   },

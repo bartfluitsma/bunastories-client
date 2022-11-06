@@ -9,10 +9,19 @@
     font-family: theme("fontFamily.secondary");
   }
 
-  h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 700;
+    @apply text-darkColor;
+  }
+
+  h1 {
     @apply text-6xl;
   }
 
@@ -21,7 +30,7 @@
   }
 
   h3 {
-    @apply text-4xl;
+    @apply mb-1 text-4xl;
   }
 
   h4 {
@@ -62,9 +71,13 @@
 
 /* buttons */
 .primaryBtn {
-  @apply w-fit rounded-[50px] bg-primaryColor px-[30px] py-[10px] hover:brightness-110;
+  @apply w-fit rounded-[50px] bg-primaryColor px-[30px] py-[10px] text-white hover:brightness-110;
 }
 
 .secondaryBtn {
   @apply w-fit rounded-[50px] border-[1px] border-darkColor bg-transparent px-[30px] py-[10px] text-darkColor  hover:bg-darkColor hover:text-white;
+}
+
+.ghostBtn {
+  @apply w-fit px-[30px] py-[10px] text-darkColor hover:underline;
 }
