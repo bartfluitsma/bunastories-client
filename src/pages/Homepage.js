@@ -1,3 +1,4 @@
+import AboutIntro from "../components/AboutIntro";
 import HeroSection from "../components/heroSection";
 import HowToSection from "../components/HowToSection";
 import StepsToTake from "../components/StepsToTake";
@@ -8,6 +9,7 @@ const HomePage = () => {
       <HeroSection />
       <HowToSection />
       <StepsToTake />
+      <AboutIntro />
     </>
   );
 };
