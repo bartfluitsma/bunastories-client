@@ -1,7 +1,7 @@
-const ImageTwoColumns = ({ alt, src }) => {
+const ImageTwoColumns = ({ alt, src, noMargin }) => {
   return (
     <>
-      <div className="w-auto lg:w-2/3 xl:w-auto">
+      <div className={noMargin ? "m-0 max-w-lg" : "m-auto max-w-lg"}>
         <img
           className="rounded-3xl object-cover object-center"
           alt={alt}

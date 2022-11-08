@@ -1,7 +1,8 @@
-import AboutIntro from "../components/AboutIntro";
-import HeroSection from "../components/heroSection";
-import HowToSection from "../components/HowToSection";
-import StepsToTake from "../components/StepsToTake";
+import AboutIntro from "../components/sections/AboutIntro";
+import HeroSection from "../components/sections/HeroSection";
+import HowToSection from "../components/sections/HowToSection";
+import StepsToTake from "../components/sections/StepsToTake";
+import WhySpecialtyCoffee from "../components/sections/WhySpecialtyCoffee";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <HowToSection />
       <StepsToTake />
       <AboutIntro />
+      <WhySpecialtyCoffee />
     </>
   );
 };
