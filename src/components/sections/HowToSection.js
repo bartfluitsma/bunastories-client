@@ -6,7 +6,7 @@ import TwoColumns from "../TwoColumns";
 import useMediaQuery from "../../helpers/breakpoints";
 
 const HowToSection = () => {
-  const isBreakpoint = useMediaQuery(600);
+  const isBreakpoint = useMediaQuery(900);
 
   return (
     <section className="bg-lightColor">
@@ -31,7 +31,7 @@ const HowToSection = () => {
           </div>
         </div>
         <ImageTwoColumns
-          noMargin={isBreakpoint ? false : true}
+          noMargin={isBreakpoint ? true : false}
           alt="Woman starting out of a window inside a specialty coffee place"
           src={CoffeePlaceImg}
         ></ImageTwoColumns>
