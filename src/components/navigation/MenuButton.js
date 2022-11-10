@@ -1,15 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { navItems as data } from "../../data";
 
 const MenuButton = () => {
-  const navItems = [
-    { menuTitle: "Home", menuLink: "" },
-    { menuTitle: "Find a coffee", menuLink: "/listing" },
-    { menuTitle: "About", menuLink: "/about" },
-    { menuTitle: "Contact", menuLink: "/contact" },
-    { menuTitle: "Blog", menuLink: "/blog" },
-  ];
-
   // change style of menu on click
   const [style, setStyle] = useState(true);
   const changeStyle = () => {
@@ -52,7 +45,7 @@ const MenuButton = () => {
         </div>
         {!style ? (
           <div className="absolute right-0 min-w-[200px] rounded-xl bg-[white] py-4 px-5 shadow-softShadow">
-            {navItems.map((navItem, idx) => (
+            {data.map((navItem, idx) => (
               <NavLink key={idx} to={navItem.menuLink} onClick={changeStyle}>
                 <span className="my-2 block text-base hover:underline">
                   {navItem.menuTitle}
