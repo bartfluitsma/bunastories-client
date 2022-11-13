@@ -23,11 +23,11 @@ const SearchBar = () => {
         />
         {isBreakpoint ? (
           <button className="absolute right-0 mt-[5px] mr-[23px] grid h-[55px] w-[55px] place-items-center rounded-[45px] bg-primaryColor">
-            <SearchIcon className="" />
+            <SearchIcon />
           </button>
         ) : (
-          <button className="absolute right-0 mt-[5px] mr-[6px] grid h-[45px] w-[45px] transform place-items-center rounded-[45px] bg-primaryColor">
-            <SearchIcon className="" />
+          <button className="m-2 mr-0 grid h-[48px] w-[48px] cursor-pointer place-items-center rounded-[50%] bg-primaryColor shadow-softShadow">
+            <SearchIcon />
           </button>
         )}
       </form>

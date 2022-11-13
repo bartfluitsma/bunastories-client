@@ -1,7 +1,7 @@
 import Barista from "../../assets/images/barista-preparing-a-coffee.png";
 import DrinkingCoffee from "../../assets/images/girl-drinking-a-cup-of-coffee.png";
 import Pouring from "../../assets/images/barista-pouring-in-foam-in-a-cup-for-a-cappucino.png";
-import Button from "../Button";
+import Button from "../Button.tsx";
 import useMediaQuery from "../../helpers/breakpoints";
 
 const photosClass = `rounded-3xl p-2 md:w-full `;

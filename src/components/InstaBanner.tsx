@@ -51,7 +51,7 @@ const InstaBanner = () => {
 
   return (
     <>
-      <div className="text-center">
+      <div className="text-center mb-16">
         <h4> Follow us!</h4>
         <p>
           <a

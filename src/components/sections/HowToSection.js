@@ -1,5 +1,5 @@
 import CoffeePlaceImg from "../../assets/images/specialty-coffee-place-with-woman-sitting-at-the-window.png";
-import Button from "../Button";
+import Button from "../Button.tsx";
 import ImageTwoColumns from "../ImageTwoColumns";
 import SubHeader from "../SubHeader";
 import TwoColumns from "../TwoColumns";

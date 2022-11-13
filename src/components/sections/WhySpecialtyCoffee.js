@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../Button.tsx";
 import ImageTwoColumns from "../ImageTwoColumns";
 import SubHeader from "../SubHeader";
 import CoffeeRoasting from "../../assets/images/roasting-specialty-coffee-beans.png";
